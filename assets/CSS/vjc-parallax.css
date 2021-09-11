@@ -551,6 +551,7 @@ ul.posts {
 
     .apraksts-mobile.grafiks table {
         width: 80%;
+        margin: 0 auto;
     }
 
     img.profila-bildes {
@@ -645,6 +646,7 @@ ul.posts {
 
     .apraksts-mobile.grafiks table{
         width: 80%;
+        margin: 0 auto;
     }
 
     img.profila-bildes {
@@ -669,6 +671,7 @@ ul.posts {
 @media only screen and (min-width: 520px) and (max-width: 550px){
     .apraksts-mobile.grafiks table{
         width: 90%;
+        margin: 0 auto;
     }
 
     .apraksts.personals, .apraksts-desk.ar-attelu, .apraksts-desk.nodarbibas, .apraksts-desk.grafiks, .apraksts-large{
