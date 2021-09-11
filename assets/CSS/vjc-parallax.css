@@ -265,6 +265,10 @@ img.jaunumi {
     margin-top: 64px;
 }
 
+.row.center {
+    justify-content: center;
+}
+
 /*Google Maps*/
 #map {
     width: 100%;
