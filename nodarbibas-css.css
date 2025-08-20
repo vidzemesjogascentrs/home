@@ -1,0 +1,136 @@
+/* Schedule container */
+#nodarbibu-grafiks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 80%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+/* Desktop: keep all days in a single horizontal scroll row */
+@media (min-width: 1024px) {
+  #nodarbibu-grafiks {
+    flex-direction: row;
+/*    overflow-x: auto;*/
+    gap: 1.25rem;
+  }
+
+  .nodarbibu-grafiks_diena {
+    flex: 1 1 auto;           /* allow flexible shrinking */
+/*    min-width: 220px;         /* don’t get too narrow */*/
+/*    max-width: 100%;          /* prevents overflow past viewport */*/
+  }
+}
+
+/* Each day block */
+.nodarbibu-grafiks_diena {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0; /* keeps shape when horizontal scrolling */
+}
+
+.nodarbibu-grafiks_diena:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Day name */
+.nodarbibu-grafiks_diena--nosaukums {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #111827;
+  letter-spacing: 0.3px;
+}
+
+/* List of classes */
+.nodarbibu-grafiks_diena--nodarbibu-saraksts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Individual class card */
+.nodarbibu-saraksts--nodarbiba {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: #fdfdfd;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.nodarbibu-saraksts--nodarbiba:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* Mobile: 2-column layout inside each class */
+@media (max-width: 1023px) {
+  .nodarbibu-saraksts--nodarbiba {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    align-items: start;
+  }
+
+  .nodarbiba--nosaukums {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; /* spans both rows on the left */
+    align-self: center;
+  }
+
+  .nodarbiba--pasniedzejs {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 0.25rem;
+  }
+
+  .nodarbiba--laiks {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+/* Class text */
+.nodarbiba--nosaukums {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.nodarbiba--pasniedzejs {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.nodarbiba--laiks {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #374151;
+}
+
+.nodarbiba--laiks svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.5;
+  color: #6b7280;
+  flex-shrink: 0;
+  margin-top: 1px; /* optical alignment */
+}
+
+/* Utility */
+.template,
+.hidden {
+  display: none !important;
+}
