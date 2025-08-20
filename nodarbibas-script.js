@@ -56,7 +56,7 @@ Object.entries(grafiks).forEach(([day, classes]) => {
 		pasniedzejs.textContent = singleClass.pasniedzejs;
 		laiks.textContent = singleClass.laiks
 
-		visasNodarbibas.removeChild(vienaNodarbiba);
+		// visasNodarbibas.removeChild(vienaNodarbiba);
 		visasNodarbibas.appendChild(jaunaNodarbiba);
 		jaunaNodarbiba.classList.remove("hidden");
 	});
