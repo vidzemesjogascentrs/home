@@ -35,7 +35,7 @@ const grafiks = {
 };
 
 var nodarbibuSaraksts = document.getElementById("nodarbibu-grafiks");
-var template = nodarbibuSaraksts.querySelector(".template");
+var template = nodarbibuSaraksts.querySelector(".nodarbibu-grafiks_diena.template");
 
 
 Object.entries(grafiks).forEach(([day, classes]) => {
@@ -56,7 +56,7 @@ Object.entries(grafiks).forEach(([day, classes]) => {
 		pasniedzejs.textContent = singleClass.pasniedzejs;
 		laiks.textContent = singleClass.laiks
 
-
+		visasNodarbibas.removeChild(vienaNodarbiba);
 		visasNodarbibas.appendChild(jaunaNodarbiba);
 		jaunaNodarbiba.classList.remove("hidden");
 	});
@@ -65,6 +65,7 @@ Object.entries(grafiks).forEach(([day, classes]) => {
 	
 
 	nodarbibuSaraksts.appendChild(newDay);
+	nodarbibuSaraksts.removeChild(template);
 	newDay.classList.remove("hidden");
 	newDay.classList.remove("template")
   // console.log(day);
