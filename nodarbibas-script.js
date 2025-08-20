@@ -65,7 +65,7 @@ Object.entries(grafiks).forEach(([day, classes]) => {
 	
 
 	nodarbibuSaraksts.appendChild(newDay);
-	nodarbibuSaraksts.removeChild(template);
+	// nodarbibuSaraksts.removeChild(template);
 	newDay.classList.remove("hidden");
 	newDay.classList.remove("template")
   // console.log(day);
