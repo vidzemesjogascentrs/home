@@ -52,7 +52,7 @@ Object.entries(grafiks).forEach(([day, classes]) => {
 		var pasniedzejs = jaunaNodarbiba.querySelector(".nodarbiba--pasniedzejs");
 		var laiks = jaunaNodarbiba.querySelector(".nodarbiba--laiks span");
 
-		nosaukums.textContent = singleClass.laiks;
+		nosaukums.textContent = singleClass.nodarbiba;
 		pasniedzejs.textContent = singleClass.pasniedzejs;
 		laiks.textContent = singleClass.laiks
 
