@@ -41,7 +41,7 @@ const grafiks = {
     {
       nodarbiba: "Pranajama",
       pasniedzejs: "Inta",
-      laiks: "9:00 - 10:30"
+      laiks: "9:00 - 10:00"
     }
   ]
 };
