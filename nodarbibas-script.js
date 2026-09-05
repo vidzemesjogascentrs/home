@@ -3,14 +3,19 @@ const grafiks = {
     {
       nodarbiba: "Visi līmeņi",
       pasniedzejs: "Ārija",
-      laiks: "18:30 - 20:00"
+      laiks: "18:00 - 19:30"
     }
   ],
   "Otrdiena": [
+	  {
+	  	  nodarbiba: "Iesācēji",
+	      pasniedzejs: "Inta",
+	      laiks: "8:30 - 10:00"
+	  },
     {
       nodarbiba: "Visi līmeņi",
       pasniedzejs: "Inta",
-      laiks: "18:00 - 20:00"
+      laiks: "18:00 - 19:30"
     }
   ],
   "Trešdiena": [
@@ -22,14 +27,21 @@ const grafiks = {
 	  {
 	  	  nodarbiba: "Iesācēji",
 	      pasniedzejs: "Ārija",
-	      laiks: "19:00 - 20:30"
+	      laiks: "18:30 - 20:00"
 	  }
   ],
   "Ceturtdiena": [
     {
-      nodarbiba: "1. līmenis",
+      nodarbiba: "Visi līmeņi",
       pasniedzejs: "Inta",
       laiks: "18:00 - 19:30"
+    }
+  ],
+	"Piektdiena": [
+    {
+      nodarbiba: "Pranajama",
+      pasniedzejs: "Inta",
+      laiks: "9:00 - 10:30"
     }
   ]
 };
