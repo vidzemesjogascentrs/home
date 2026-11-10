@@ -10,7 +10,7 @@ const grafiks = {
 	  {
 	  	  nodarbiba: "Iesācēji",
 	      pasniedzejs: "Inta",
-	      laiks: "9:30 - 11:00"
+	      laiks: "9:00 - 10:30"
 	  },
     {
       nodarbiba: "Visi līmeņi",
